@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:flutter_cinema/config/constants.dart';
 import 'package:flutter_cinema/config/di/app_module.dart';
 import 'package:flutter_cinema/movie/data/models/apires.dart';

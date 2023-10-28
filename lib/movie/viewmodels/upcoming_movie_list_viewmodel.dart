@@ -3,14 +3,15 @@ import 'package:flutter_cinema/movie/data/models/movie.dart';
 import 'package:flutter_cinema/movie/data/repository/movie_repository.dart';
 import 'package:mobx/mobx.dart';
 
-part 'upcoming_viewmodel.g.dart';
+part 'upcoming_movie_list_viewmodel.g.dart';
 
-class UpcomingMovieList = _UpcomingMovieList with _$UpcomingMovieList;
+class UpcomingMovieListViewModel = _UpcomingMovieListViewModel
+    with _$UpcomingMovieListViewModel;
 
-abstract class _UpcomingMovieList with Store {
+abstract class _UpcomingMovieListViewModel with Store {
   final _movieRepository = getIt<MovieRepository>();
 
-  _UpcomingMovieList() {
+  _UpcomingMovieListViewModel() {
     getUpcomingMovies();
   }
 

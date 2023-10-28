@@ -12,4 +12,6 @@ void configureDependencies() => $initGetIt(getIt);
 abstract class AppModules {
   @singleton
   http.Client get httpClient => http.Client();
+
+
 }

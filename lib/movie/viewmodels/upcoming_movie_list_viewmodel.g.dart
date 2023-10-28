@@ -1,6 +1,6 @@
 // GENERATED CODE - DO NOT MODIFY BY HAND
 
-part of 'upcoming_viewmodel.dart';
+part of 'upcoming_movie_list_viewmodel.dart';
 
 // **************************************************************************
 // StoreGenerator
@@ -8,9 +8,9 @@ part of 'upcoming_viewmodel.dart';
 
 // ignore_for_file: non_constant_identifier_names, unnecessary_brace_in_string_interps, unnecessary_lambdas, prefer_expression_function_bodies, lines_longer_than_80_chars, avoid_as, avoid_annotating_with_dynamic, no_leading_underscores_for_local_identifiers
 
-mixin _$UpcomingMovieList on _UpcomingMovieList, Store {
+mixin _$UpcomingMovieListViewModel on _UpcomingMovieListViewModel, Store {
   late final _$isLoadingAtom =
-      Atom(name: '_UpcomingMovieList.isLoading', context: context);
+      Atom(name: '_UpcomingMovieListViewModel.isLoading', context: context);
 
   @override
   bool get isLoading {
@@ -26,7 +26,7 @@ mixin _$UpcomingMovieList on _UpcomingMovieList, Store {
   }
 
   late final _$moviesAtom =
-      Atom(name: '_UpcomingMovieList.movies', context: context);
+      Atom(name: '_UpcomingMovieListViewModel.movies', context: context);
 
   @override
   ObservableList<Movie> get movies {
@@ -41,25 +41,26 @@ mixin _$UpcomingMovieList on _UpcomingMovieList, Store {
     });
   }
 
-  late final _$getUpcomingMoviesAsyncAction =
-      AsyncAction('_UpcomingMovieList.getUpcomingMovies', context: context);
+  late final _$getUpcomingMoviesAsyncAction = AsyncAction(
+      '_UpcomingMovieListViewModel.getUpcomingMovies',
+      context: context);
 
   @override
   Future getUpcomingMovies() {
     return _$getUpcomingMoviesAsyncAction.run(() => super.getUpcomingMovies());
   }
 
-  late final _$_UpcomingMovieListActionController =
-      ActionController(name: '_UpcomingMovieList', context: context);
+  late final _$_UpcomingMovieListViewModelActionController =
+      ActionController(name: '_UpcomingMovieListViewModel', context: context);
 
   @override
   void setLoading(bool value) {
-    final _$actionInfo = _$_UpcomingMovieListActionController.startAction(
-        name: '_UpcomingMovieList.setLoading');
+    final _$actionInfo = _$_UpcomingMovieListViewModelActionController
+        .startAction(name: '_UpcomingMovieListViewModel.setLoading');
     try {
       return super.setLoading(value);
     } finally {
-      _$_UpcomingMovieListActionController.endAction(_$actionInfo);
+      _$_UpcomingMovieListViewModelActionController.endAction(_$actionInfo);
     }
   }
 
